@@ -4,9 +4,9 @@ const router = express.Router();
 const personController = require('../controller/person.controller.js');
 
 // get all persons
-router.route('/').get(personController.gettablelist);
+router.route('/allPersons').get(personController.gettablelist);
 
 // get person by ID;
-router.route('/').get('/:id',personController.get);
+router.route('/personByID').get('/:id',personController.get);
 
 module.exports = router;
