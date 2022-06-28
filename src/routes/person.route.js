@@ -7,6 +7,6 @@ const personController = require('../controller/person.controller.js');
 router.route('/getAllPersons').get(personController.gettablelist);
 
 // get person by ID;
-router.route('/personByID').get('/:id',personController.get);
+router.route('/getPersonByID').get('/:id',personController.get);
 
 module.exports = router;
